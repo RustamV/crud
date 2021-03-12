@@ -54,6 +54,7 @@ const Crud = () => {
         },
       ];
       setUsers(newUsers);
+      toggleAddUserModal();
     } catch (error) {
       console.log(error);
     }
@@ -78,6 +79,7 @@ const Crud = () => {
         return item;
       });
       setUsers(newUsers);
+      toggleUpdateUserModal();
     } catch (error) {
       console.log(error);
     }
